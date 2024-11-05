@@ -156,10 +156,10 @@ function MainComponent() {
 
   return (
     <div className="font-playfair text-gray-800 min-h-screen">
-      <header className="bg-teal-500 text-white p-4 sticky top-0 z-20">
+      <header className="bg-teal-500 text-white p-4 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-tangerine">The Dean At Maverick</h1>
-          <nav className="hidden md:block">
+          <nav className="block md:block">
             <ul className="flex space-x-4">
               <li>
                 <a href="#" className="hover:text-teal-200">
@@ -191,7 +191,7 @@ function MainComponent() {
               </li>
             </ul>
           </nav>
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button className="md:hidden z-50" onClick={toggleMenu}>
             <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
           </button>
         </div>
