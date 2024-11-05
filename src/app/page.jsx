@@ -154,6 +154,26 @@ function MainComponent() {
     };
   }, [isMenuOpen]);
 
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    setTouchStartX(touch.clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    const touch = e.touches[0];
+    setTouchEndX(touch.clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX - touchEndX > 50) {
+      nextSlide();
+    }
+
+    if (touchEndX - touchStartX > 50) {
+      prevSlide();
+    }
+  };
+
   return (
     <div className="font-playfair text-gray-800 min-h-screen">
       <header className="bg-teal-500 text-white p-4 sticky top-0 z-20">
@@ -290,7 +310,12 @@ function MainComponent() {
               The Dean At Maverick
             </h3>
             <div className="relative">
-              <div className="flex overflow-hidden">
+              <div
+                className="flex overflow-hidden"
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+              >
                 {images
                   .slice(currentSlide, currentSlide + 2)
                   .map((image, index) => (
