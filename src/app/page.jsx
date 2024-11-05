@@ -56,7 +56,7 @@ function MainComponent() {
       alt: "Beautiful brick house with black shutters and landscaped front yard",
     },
     {
-      src: "https://ucarecdn.com/6fe58e93-cf39-437d-a0f9-ae74839f9b08/-/format/auto/",
+      src: "https://ucarecdn.com/6fe58e93-cf39-437f-a0f9-ae74839f9b08/-/format/auto/",
       alt: "Beautiful brick house with black shutters and landscaped front yard",
     },
     {
