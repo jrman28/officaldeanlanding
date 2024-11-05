@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   "theme": {
-    "extend": {},
+    "extend": {
+      "fontFamily": {
+        "tangerine": ["Tangerine", "cursive"],
+        "playfair": ["Playfair Display", "serif"]
+      }
+    },
     "plugins": []
   }
 }
