@@ -10,7 +10,7 @@ export const metadata = {
     { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' }, // P08ac
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'true' },
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Playfair+Display&display=swap' }
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tangerine:wght@400&family=Playfair+Display&display=swap' }
   ]
 }
 
