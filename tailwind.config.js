@@ -6,12 +6,7 @@ module.exports = {
     "./src/app/page.jsx"
   ],
   "theme": {
-    "extend": {
-      "fontFamily": {
-        "tangerine": ["Tangerine", "cursive"],
-        "playfair": ["Playfair Display", "serif"]
-      }
-    },
+    "extend": {},
     "plugins": []
   }
 }
