@@ -360,7 +360,7 @@ function MainComponent() {
               <li>Optional and Seasonal (Bed and Breakfast Style Brunch)</li>
               <li>Guest house available upon request</li>
             </ul>
-            <p className="font-bold text-xl text-teal-500">$500/night</p>
+            <p className="font-bold text-xl text-teal-500 font-tangerine">$500/night</p>
           </section>
 
           <section id="booking-section" className="mb-12">
