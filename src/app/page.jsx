@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 function MainComponent() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -153,6 +155,19 @@ function MainComponent() {
       clearInterval(interval);
     };
   }, [isMenuOpen]);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="font-playfair text-gray-800 min-h-screen">

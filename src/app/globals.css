@@ -201,3 +201,59 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Media queries for better mobile responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}
+
+/* CSS rules for cross-browser compatibility */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* CSS rules for modern HTML5 elements */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  display: block;
+  font-size: 0.875em;
+  color: #6b7280;
+}
