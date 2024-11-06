@@ -1,17 +1,17 @@
-It is a [Next.js](https://nextjs.org/) project built on React and TailwindCSS.
+It is a React project built on TailwindCSS.
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
+npm start
 # or
-yarn dev
+yarn start
 # or
-pnpm dev
+pnpm start
 # or
-bun dev
+bun start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -22,5 +22,3 @@ To learn more, take a look at the following resources:
 
 - [React Documentation](https://react.dev/) - learn about React
 - [TailwindCSS Documentation](https://tailwindcss.com/) - learn about TailwindCSS
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
