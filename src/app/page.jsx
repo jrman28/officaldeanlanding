@@ -192,7 +192,7 @@ function MainComponent() {
             </ul>
           </nav>
           <button className="md:hidden" onClick={toggleMenu}>
-            <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
+            <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"} text-2xl`}></i>
           </button>
         </div>
       </header>
@@ -400,22 +400,22 @@ function MainComponent() {
             <h3 className="text-2xl font-bold mb-4">Amenities</h3>
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <li>
-                <i className="fas fa-wifi mr-2"></i> Free Wi-Fi
+                <i className="fas fa-wifi mr-2 text-lg"></i> Free Wi-Fi
               </li>
               <li>
-                <i className="fas fa-laptop mr-2"></i> Work Space Area
+                <i className="fas fa-laptop mr-2 text-lg"></i> Work Space Area
               </li>
               <li>
-                <i className="fas fa-dumbbell mr-2"></i> Exercise Room
+                <i className="fas fa-dumbbell mr-2 text-lg"></i> Exercise Room
               </li>
               <li>
-                <i className="fas fa-utensils mr-2"></i> Fully Equipped Kitchen
+                <i className="fas fa-utensils mr-2 text-lg"></i> Fully Equipped Kitchen
               </li>
               <li>
-                <i className="fas fa-tv mr-2"></i> Smart TV
+                <i className="fas fa-tv mr-2 text-lg"></i> Smart TV
               </li>
               <li>
-                <i className="fas fa-concierge-bell mr-2"></i> Bed & Breakfast
+                <i className="fas fa-concierge-bell mr-2 text-lg"></i> Bed & Breakfast
                 Available
               </li>
             </ul>
