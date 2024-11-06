@@ -6,20 +6,15 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'The Dean At Maverick',
   description: 'Airbnb style landing page created by JustDesign',
-<<<<<<< HEAD
-  link: [
-    { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' }, // P08ac
-=======
   viewport: {
     width: 'device-width',
     initialScale: 1,
     shrinkToFit: 'no'
   },
   link: [ 
->>>>>>> d95314c (mobile display change)
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'true' },
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tangerine:wght@400&family=Playfair+Display&display=swap' }
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'true' }, 
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Playfair+Display&display=swap' }
   ]
 }
 
