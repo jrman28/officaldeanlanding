@@ -13,8 +13,6 @@ module.exports = {
       }
     },
 
-    "plugins": [
-      require('tailwindcss-plugin-cross-browser-compatibility')
-    ]
+    "plugins": []
   }
 }
