@@ -2,7 +2,18 @@
 import React from "react";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-import { FaBars, FaTimes, FaChevronLeft, FaChevronRight, FaWifi, FaLaptop, FaDumbbell, FaUtensils, FaTv, FaConciergeBell } from 'react-icons/fa';
+import {
+  FaBars,
+  FaTimes,
+  FaChevronLeft,
+  FaChevronRight,
+  FaWifi,
+  FaLaptop,
+  FaDumbbell,
+  FaUtensils,
+  FaTv,
+  FaConciergeBell,
+} from "react-icons/fa";
 
 function MainComponent() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -321,13 +332,13 @@ function MainComponent() {
               </div>
               <button
                 onClick={prevSlide}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-20 text-white p-2 rounded-r"
               >
                 <FaChevronLeft />
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-20 text-white p-2 rounded-l"
               >
                 <FaChevronRight />
               </button>
@@ -360,23 +371,30 @@ function MainComponent() {
               About The Dean At Maverick
             </h3>
             <p className="mb-4">
-              The Dean at Maverick serves as a large versatile Airbnb and event
-              space focused on providing rooms with a clean and transitional
-              character that is attractive to leisure visitors to the area.
+              Discover The Dean at Maverick, a spacious and versatile Airbnb and
+              event space designed to cater to leisure travelers, business
+              guests, and special gatherings. With a focus on clean,
+              transitional aesthetics, this inviting property offers a welcoming
+              atmosphere that appeals to visitors seeking comfort and style
+              during their stay in the area. Whether you're planning a memorable
+              event or enjoying a getaway for work or leisure, The Dean at
+              Maverick is the perfect choice for an unforgettable experience.
             </p>
             <ul className="list-disc list-inside mb-4">
               <li>Master Bedroom</li>
-              <li>2-3 Queen Bed Rooms</li>
+              <li>3 Queen Bed Rooms</li>
               <li>Bunk Room</li>
-              <li>Two XL Twin Beds</li>
               <li>Workspace</li>
               <li>3.5 Modern Bathrooms</li>
               <li>Dining area with dining table(s)</li>
               <li>Exercise Room</li>
               <li>Optional and Seasonal (Bed and Breakfast Style Brunch)</li>
-              <li>Guest house available upon request</li>
+              <li><b>Event space</b> available upon request</li>
+              <li><b>Guest house</b> available upon request</li>
             </ul>
-            <p className="font-bold text-xl text-teal-500 font-tangerine">$500/night</p>
+            <p className="font-bold text-xl text-teal-500 font-tangerine">
+              $500/night
+            </p>
           </section>
 
           <section id="booking-section" className="mb-12">
@@ -439,12 +457,13 @@ function MainComponent() {
           <section className="mb-12">
             <h3 className="text-2xl font-bold mb-4">Location</h3>
             <p className="mb-4">
-              The Dean at Maverick is located in Harvest AL and centrally
-              located as a median spot and less than a 15-20 mile radius to the
-              downtown Huntsville, Madison city, Huntsville airport, Cummings
-              Research Park, the U.S. Space and Rocket Center and research park
-              area/corporate district of the city as well as the Redstone
-              Arsenal.
+              Perfectly situated, you’re just 15-20 minutes from downtown
+              Huntsville, Madison, the Huntsville International Airport, and key
+              locations like Cummings Research Park and the U.S. Space and
+              Rocket Center. Enjoy the convenience of being less than a mile
+              from Publix and fantastic dining options, all while nestled in a
+              peaceful cul-de-sac. Whether for business or leisure, this is your
+              ideal home away from home!
             </p>
             <div className="aspect-w-16 aspect-h-9">
               <iframe
@@ -521,10 +540,18 @@ function MainComponent() {
       </footer>
       <style jsx global>{`
         @keyframes fadeInOut {
-          0% { opacity: 0; }
-          10% { opacity: 1; }
-          90% { opacity: 1; }
-          100% { opacity: 0; }
+          0% {
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
         }
       `}</style>
     </div>
