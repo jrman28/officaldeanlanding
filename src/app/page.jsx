@@ -2,6 +2,7 @@
 import React from "react";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
+import { FaBars, FaTimes, FaChevronLeft, FaChevronRight, FaWifi, FaLaptop, FaDumbbell, FaUtensils, FaTv, FaConciergeBell } from 'react-icons/fa';
 
 function MainComponent() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -207,7 +208,7 @@ function MainComponent() {
             </ul>
           </nav>
           <button className="md:hidden" onClick={toggleMenu}>
-            <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
+            <FaBars />
           </button>
         </div>
       </header>
@@ -322,13 +323,13 @@ function MainComponent() {
                 onClick={prevSlide}
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-r"
               >
-                <i className="fas fa-chevron-left"></i>
+                <FaChevronLeft />
               </button>
               <button
                 onClick={nextSlide}
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-l"
               >
-                <i className="fas fa-chevron-right"></i>
+                <FaChevronRight />
               </button>
             </div>
           </section>
@@ -348,7 +349,7 @@ function MainComponent() {
                   onClick={() => setSelectedImage(null)}
                   className="absolute top-4 right-4 text-white text-xl"
                 >
-                  <i className="fas fa-times"></i>
+                  <FaTimes />
                 </button>
               </div>
             </div>
@@ -415,23 +416,22 @@ function MainComponent() {
             <h3 className="text-2xl font-bold mb-4">Amenities</h3>
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <li>
-                <i className="fas fa-wifi mr-2"></i> Free Wi-Fi
+                <FaWifi className="mr-2" /> Free Wi-Fi
               </li>
               <li>
-                <i className="fas fa-laptop mr-2"></i> Work Space Area
+                <FaLaptop className="mr-2" /> Work Space Area
               </li>
               <li>
-                <i className="fas fa-dumbbell mr-2"></i> Exercise Room
+                <FaDumbbell className="mr-2" /> Exercise Room
               </li>
               <li>
-                <i className="fas fa-utensils mr-2"></i> Fully Equipped Kitchen
+                <FaUtensils className="mr-2" /> Fully Equipped Kitchen
               </li>
               <li>
-                <i className="fas fa-tv mr-2"></i> Smart TV
+                <FaTv className="mr-2" /> Smart TV
               </li>
               <li>
-                <i className="fas fa-concierge-bell mr-2"></i> Bed & Breakfast
-                Available
+                <FaConciergeBell className="mr-2" /> Bed & Breakfast Available
               </li>
             </ul>
           </section>
