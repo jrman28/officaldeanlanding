@@ -3,14 +3,15 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  shrinkToFit: 'no'
+}
+
 export const metadata = {
   title: 'The Dean At Maverick',
   description: 'Airbnb style landing page created by JustDesign',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    shrinkToFit: 'no'
-  },
   link: [ 
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'true' }, 
