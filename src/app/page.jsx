@@ -404,11 +404,8 @@ function MainComponent() {
             <div className="w-full h-[600px] md:h-[700px]">
               <script src="https://www.bookingmood.com/js/resize.js"></script>
               <iframe
-                src="https://www.bookingmood.com/embed/2c5baa21-eaff-48f8-9436-e5be335d8209"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.bookingmood.com/embed/2c5baa21-eaff-48f8-9436-e5be335d8209?"
+                style="width:100%;border:none"
               ></iframe>
             </div>
           </section>
