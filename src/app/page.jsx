@@ -496,6 +496,12 @@ function MainComponent() {
                   answer:
                     "For a Firm cancellation policy, guests must cancel up to 60 days before your trip and only pay 50% of the total accommodation fees for the reservation. Cancel within 60 days of the trip and the reservation is non-refundable.",
                 },
+                {
+                  question: "Guest Booking Agreement",
+                  answer:
+                    "You can view the Guest Booking Agreement by clicking the link below.",
+                  link: "https://drive.google.com/file/d/1acdaOQ2ySdDea8mQBusPRCpeCLN_KR6y/view?usp=sharing",
+                },
               ].map((faq, index) => (
                 <div
                   key={index}
@@ -511,7 +517,19 @@ function MainComponent() {
                     </span>
                   </button>
                   {activeAccordion === index && (
-                    <p className="mt-2">{faq.answer}</p>
+                    <div className="mt-2">
+                      <p>{faq.answer}</p>
+                      {faq.link && (
+                        <a
+                          href={faq.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-teal-500 underline"
+                        >
+                          View Agreement
+                        </a>
+                      )}
+                    </div>
                   )}
                 </div>
               ))}
