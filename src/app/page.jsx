@@ -405,7 +405,7 @@ function MainComponent() {
               <script src="https://www.bookingmood.com/js/resize.js"></script>
               <iframe
                 src="https://www.bookingmood.com/embed/2c5baa21-eaff-48f8-9436-e5be335d8209?"
-                style="width:100%;border:none"
+                style={{ width: "100%", border: "none" }}
               ></iframe>
             </div>
           </section>
