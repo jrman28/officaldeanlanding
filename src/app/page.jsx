@@ -511,10 +511,35 @@ function MainComponent() {
                     </span>
                   </button>
                   {activeAccordion === index && (
-                    <p className="mt-2">{faq.answer}</p>
+                    <div className="mt-2">
+                      <p>{faq.answer}</p>
+                    </div>
                   )}
                 </div>
               ))}
+              <div className="border-b border-gray-200 pb-4 last:border-b-0">
+                <button
+                  className="flex justify-between items-center w-full text-left font-bold focus:outline-none"
+                  onClick={() => toggleAccordion(3)}
+                >
+                  <span>Guest Booking Agreement?</span>
+                  <span className="text-xl">
+                    {activeAccordion === 3 ? "−" : "+"}
+                  </span>
+                </button>
+                {activeAccordion === 3 && (
+                  <div className="mt-2">
+                    <a
+                      href="https://drive.google.com/file/d/1acdaOQ2ySdDea8mQBusPRCpeCLN_KR6y/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-teal-500 underline"
+                    >
+                      View Agreement
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </section>
         </div>
